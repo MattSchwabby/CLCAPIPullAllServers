@@ -14,15 +14,17 @@ This script is written to run on Windows Operating Systems and generates a CSV f
 
 ### Running the script
 
-After downloading the script, dot source the file wherever it is located on your hard drive. For example: ./"c:/users/administrator/downloads/CLCAPIPullAllServers.ps1". Alternative, you could export the function contained in the script and import it as a module. This is the best option if you plan on repeatedly using this functionality.
+After downloading the script, dot source the file wherever it is located on your hard drive. For example: ./"c:/users/administrator/downloads/CLCAPIPullAllServers.ps1". Alternatively, you could export the function contained in the script and import it as a module. This is the best option if you plan on repeatedly using this functionality.
 
 Once the script is properly sourced, it can be run. Example: >CLCAPIPullAllServers -alias MSCH -APIKey 'XXXXXXXXXXXXXXX' -APIPass 'XXXXXXXXXXXXX'
+
+It is recommended that you encapsulate your API Key and Password in single quotation marks, as done in the above example, in order to avoid any conflicts with PowerShell special characters.
 
 Please note that all of the parameters for this script are optional. If you run the script without parameters, you will be prompted for the subject account alias, API Key and API password in the PowerShell console.
 
 ### Authentication
 
-In order to run this script, you need a CenturyLink Cloud v1 API key and password. This can be found after logging in to the CenturyLink Cloud Control Portal at control.ctl.io and navigating to settings > API. If you do not see any API user information, you can click the button "Create Api User" to create a new API user, or contact your account administrator if you do not have permissions to create an API user. If you experience an error, please reach out to our support team at help@ctl.io
+In order to run this script, you need a CenturyLink Cloud v1 API key and password. This can be found after logging in to the CenturyLink Cloud Control Portal at control.ctl.io and navigating to settings > API. If you do not see any API user information, you can click the button "Create Api User" to create a new API user, or contact your account administrator if you do not have permissions to create an API user.
 
 ### Support
 
